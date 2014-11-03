@@ -1,0 +1,21 @@
+<div class="container charts">
+    <h1>Consommations et économies semaines {{firstWeek+1}} à {{lastWeek}}</h1>
+    <ul class="list-inline legend">
+        Légende : 
+        <li class="fruits">Fruits</li>
+        <li class="moving-average">Moyenne glissante de la conso</li>
+        <li class="heating">Chauffage</li>
+        <li class="electricity">Electricité</li>
+        <li class="water">Eau</li>
+        <li class="hot-water">ECS</li>
+    </ul>
+    <ul class="list-unstyled">
+        <li ng-repeat="dwelling in dwellings">
+            Logement {{dwelling.id}} - {{dwelling.label}} : 
+            <span>
+                <amcharts data="dwelling.chartData" id="globalChart{{dwelling.id}}" class="chart" ></amcharts>
+            </span>
+        </li>
+    </ul>
+    <div ng-show="loadingData"><span us-spinner></div>
+</div>

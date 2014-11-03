@@ -1,0 +1,174 @@
+
+/***************************************************************/
+/* Author: db0 (db0company@gmail.com, http://db0.fr/)          */
+/* Sources/Licence: https://github.com/db0company/css-hexagon  */
+/***************************************************************/
+
+@import "variables.less";
+
+@xxs: 14px;
+@xs: 22px;
+@sm: 44px;
+@md: 64px;
+@lg: 88px;
+@xl: 120px;
+
+
+@points: @points-orange;
+@points-hover: @points-orange-hover;
+@default: @default-orange;
+@default-hover: @default-orange-hover;
+@default-selected: @default-orange-selected;
+@shop: @blue-gray;
+@shop-hover:lighten(@blue-gray,10%);
+@shop-selected: lighten(@blue-gray,20%);
+
+//@fontmultiply: 0.7;
+
+// *********************************************************** //
+// Hexagon                                                     //
+// *********************************************************** //
+
+.hexagon-content(@size, @color: white) {
+    color: @color;
+    text-align: center;
+//    font-size: @size * @fontmultiply;
+    &:hover {
+	color: @color;
+	text-decoration: none;
+    }
+}
+.hexagon-hover {
+    cursor: pointer;
+}
+.hexagon(@side : @md, @color : @default) {
+        .hexagon-content(@side);
+        @radius: @side * 0.86602540378;
+        @width: @radius * 2;
+        margin: (@side / 2) 0;
+        width: @width;
+        height: @side;
+        background-color: @color;
+        position: relative;
+    
+    &:before, &:after {
+        content: " ";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: @radius solid transparent;
+        border-right: @radius solid transparent;
+        left: 0;
+    }
+    
+    &:before {
+        border-bottom: (@side / 2) solid @color;
+        bottom: 100%;;
+    }
+    
+    &:after {
+        border-top: (@side / 2) solid @color;
+        top: 100%;;
+    }
+    
+    img {
+        max-width: @side;
+        max-height: @side - 22px;
+    }
+    
+    &.hexagon-image-only img {
+        max-width: @side;
+        max-height: @side;
+    }
+    
+    p {
+        display: table-cell;
+        width: @width;
+        height: @side;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 22px;
+    }
+}
+
+.hexagon-changecolor(@color) {
+    background-color: @color;
+    transition: background-color 0.4s;
+    &:before {
+	border-bottom-color: @color;
+    transition: border-color 0.4s;
+    }
+    &:after {
+	border-top-color: @color;
+    transition: border-color 0.4s;
+    }      
+}
+
+/***************************************************************/
+/* Sizes                                                       */
+/***************************************************************/
+
+/* Extra Extra Small */
+.hexagon-xxs {
+    .hexagon(@xxs);
+}
+/* Extra Small */
+.hexagon-xs {
+    .hexagon(@xs);
+}
+/* Small */
+.hexagon-sm {
+    .hexagon(@sm);
+}
+/* Medium */
+.hexagon-md {
+    .hexagon(@md);
+}
+/* Large */
+.hexagon-lg {
+    .hexagon(@lg);
+}
+/* Extra large */
+.hexagon-xl {
+    .hexagon(@xl);
+}
+
+/***************************************************************/
+/* Colors                                                      */
+/***************************************************************/
+
+
+/* Points */
+.hexagon-points {
+    .hexagon-changecolor(@points);
+    &.hexagon-hover:hover {
+	.hexagon-changecolor(@points-hover);
+    }
+}
+/* Default */
+.hexagon-default {
+    .hexagon-changecolor(@default);
+    &.hexagon-hover:hover {
+	.hexagon-changecolor(@default-hover);
+    }
+    &.hexagon-selected, &.hexagon-selected:hover {
+	.hexagon-changecolor(@default-selected) !important;
+    }
+}
+//shop
+.hexagon-shop {
+    .hexagon-changecolor(@shop);
+    &.hexagon-hover:hover {
+	.hexagon-changecolor(@shop-hover);
+    }
+    &.hexagon-selected, &.hexagon-selected:hover {
+	.hexagon-changecolor(@shop-selected) !important;
+    }    
+}
+
+/***************************************************************/
+/* Inline                                                      */
+/***************************************************************/
+.hexagon-inline {
+    display: inline-block;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>fruit</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M9.1379962,4.9168721 C9.1379962,7.1307185 7.3815342,8.54035 5.2148363,8.54035 C3.0481384,8.54035 0.8855798,7.1307185 0.8855798,4.9168721 C0.8855798,2.7030197 3.0481384,0.5232914 5.2148363,0.5232914 C8.8029022,0.5232914 9.1379962,2.7030197 9.1379962,4.9168721 L9.1379962,4.9168721 L9.1379962,4.9168721 Z" id="fruit" fill="#FF6B00" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="392px" height="229px" viewBox="0 0 392 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>mountain1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="59.5299318%" id="linearGradient-1">
+            <stop stop-color="#EBF4F3" offset="0%"></stop>
+            <stop stop-color="#E5F6F4" offset="19.5651307%"></stop>
+            <stop stop-color="#5EC1B9" offset="28.4279337%"></stop>
+            <stop stop-color="#0D9389" offset="100%"></stop>
+        </linearGradient>
+        <path id="path-2" d="M190.954453,101.648673 C204.590484,85.7240581 228.051841,45.5942029 228.051841,45.5942029 C228.051841,45.5942029 276.957095,135.843504 306.661716,170.533558 C341.974375,211.772867 423.103682,273.382289 423.103682,273.382289 L33,273.382289 C33,273.382289 139.573203,161.65342 190.954453,101.648673 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="fond" sketch:type="MSArtboardGroup" transform="translate(-49.000000, -166.000000)" opacity="0.89738806">
+            <g id="montagnes" sketch:type="MSLayerGroup" transform="translate(17.000000, 121.000000)">
+                <g id="mountain1">
+                    <use stroke-opacity="0.575973732" stroke="#FFFFFF" stroke-width="1" fill="#2BBFB3" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                    <use stroke="none" fill="none" xlink:href="#path-2"></use>
+                    <use stroke="none" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

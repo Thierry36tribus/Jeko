@@ -1,0 +1,100 @@
+<div class="me container-fluid" ng-intro-options="introOptions" ng-intro-method="startHelp" >
+    
+    <div class="links row">
+        <div class="col-xs-6">
+            <a ng-href="#/all/{{dwelling.id}}" ><img src="img/icon-orchard.png" alt="Retour au verger" width="51" height="30"> <span class="hidden-xs">Retour au verger</span></a>
+        </div>
+        <div class="col-xs-6"> 
+            <ng-include src="'templates/help-button.html'"></ng-include>
+            <span class="pull-right">
+                <a href="#/account">
+                    <span class="hidden-xs">Bonjour {{$parent.userName}} ! </span><img ng-src="img/{{$parent.avatar}}" alt="" width="20" height="40">
+                </a>    
+                <span class="hidden-xs">{{points}} <img src="img/bee.png" alt="abeilles" class="bee-img"></span>
+            </span>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-5">
+            <h1 ng-if="thisWeekNbFruits == undefined">Votre arbre Jeko pousse, patience...</h1>
+            <h1 ng-if="week && week != firstWeek && thisWeekNbFruits != undefined"><ng-pluralize count="thisWeekNbFruits" when="{0:'Aucun nouveau fruit', one:'1 nouveau fruit', other:'{} nouveaux fruits'}"></ng-pluralize> dans mon arbre</h1>
+            <h1 ng-if="week && week == firstWeek && thisWeekNbFruits != undefined"><ng-pluralize count="thisWeekNbFruits" when="{0:'Aucun fruit', one:'1 fruit', other:'{} fruits'}"></ng-pluralize> au départ</h1>
+            <div>
+                <canvas id="treeCanvas" ></canvas>
+            </div>
+            <div class="canvas-footer">
+                <t36-time-machine class="time-machine"></t36-time-machine>
+                <h3>                       
+                    <ng-pluralize 
+                            count="totalFruits" 
+                            when="{'0': 'Pouquoi je n\'ai pas de fruits ?', 'one': '1 fruit : comment l\'ai-je gagné ?', 'other': ' {} fruits dans mon arbre : comment les ai-je gagnés ?'}">
+                    </ng-pluralize>                    
+                </h3>
+                <p>Les fruits que vous gagnez chaque semaine sont liés à votre consommation. Plus elle baisse, plus vous gagnez de fruits !</p>
+            </div>
+        </div>
+        <div class="col-md-7">   
+            <div class="panel panel-default data-part" id="help-cons">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Evolution de ma consommation du {{firstWeekFromDate | date:'dd/MM'}} au {{toDate | date:'dd/MM'}}&nbsp;:
+                    </h3>
+                </div>
+                <div class="panel-body details-charts">
+                    <div class="conso-line">
+                       <div class="conso conso-label">Gaz - chauffage : {{heatingSum}} kWh</div>
+                        <div class="conso"><amchart ng-click="showHeatingChart()" id="heatingChart{{dwelling.id}}" data="dwelling.chartHeating" class="detail-chart" details="true" max="{{axisMax}}"></amchart></div>
+                    </div>
+                    <div class="conso-line">
+                       <div class="conso conso-label">
+                           Gaz - eau chaude : {{hotWaterSum}} kWh
+                       </div>
+                        <div class="conso">
+                            <amchart ng-click="showHotWaterChart()" id="hotWaterChart{{dwelling.id}}" data="dwelling.chartHotWater" class="detail-chart" details="true" max="{{axisMax}}"></amchart>
+                        </div>
+                    </div>
+                    <div class="conso-line">
+                       <div class="conso conso-label">
+                           Electricité : {{electricitySum}} kWh
+                       </div>
+                        <div class="conso">
+                            <amchart ng-click="showElectricityChart()" id="electricityChart{{dwelling.id}}" data="dwelling.chartElectricity" class="detail-chart" details="true" max="{{axisMax}}"></amchart>
+                        </div>
+                    </div>
+                    <div class="with-credits conso-line">
+                       <div class="conso conso-label">
+                           Eau : {{waterSum/1000 | number: 1}} m<sup>3</sup>
+                       </div>
+                        <div class="conso">
+                            <amchart ng-click="showWaterChart()" id="waterChart{{dwelling.id}}" data="dwelling.chartWater" class="detail-chart" details="true" max="{{axisMax}}"></amchart>
+                        </div>
+                    </div>
+                    <div class="chart-info">Cliquez sur une courbe pour plus de détails</div>
+                </div>
+            </div>
+            
+            <div class="panel panel-default points-part" id="help-points">
+                <div class="panel-heading">
+                    <h3 class="panel-title">                    
+                        <img src="img/bee.png" alt="abeilles" class="bee-img"> Jouez au Jeko-Quizz pour décorer le verger !
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <p><a class="btn btn-game btn-lg" href="#/quizz">Je joue</a></p>
+                    
+                    <div class="frame">
+                        <div class="hexagon-list sliding">
+                            <div ng-repeat="decor in decorsThumbnails" class="hexagon-container">
+                                <div class="hexagon hexagon-image-only hexagon-shop hexagon-hover hexagon-inline">
+                                   <p> <a href="#/shop"><img ng-src="img/shop/{{decor.image}}"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>                                
+        </div>
+    </div>   
+</div>

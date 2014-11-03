@@ -1,0 +1,27 @@
+<div class="users container">
+    <h1>Administration</h1>
+    <h2>Utilisateurs
+        <button class="btn btn-info create-button" ng-click="createUser()" title="Créer un utilisateur">
+            <span class="glyphicon glyphicon-plus"></span>
+        </button>
+    </h2>
+    <ul class="list-unstyled">
+        <li ng-repeat="user in users" >
+            <a ng-href="#/user/{{user.id}}">{{user.name}} - {{user.login}} </a>
+            - Dernière connexion : {{user.lastLogin | date:'dd/MM/yyyy HH:mm'}}
+            <span ng-show="user.role == 1" class="glyphicon glyphicon-star" title="Administrateur"></span>
+        </li>
+    </ul>
+    <h2>Logements
+        <button class="btn btn-info create-button" ng-click="createDwelling()" title="Créer un logement">
+            <span class="glyphicon glyphicon-plus"></span>
+        </button>
+    </h2>
+    <ul class="list-unstyled">
+        <li ng-repeat="dwelling in dwellings" >
+            <a ng-href="#/dwelling/{{dwelling.id}}">{{dwelling.label}}</a>
+            {{dwelling.user.name}} - {{dwelling.user.login}}
+        </li>
+    </ul>
+
+</div>

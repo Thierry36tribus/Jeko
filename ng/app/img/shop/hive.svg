@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="56px" viewBox="0 0 40 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>hive</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-5" sketch:type="MSArtboardGroup" transform="translate(-1196.000000, -461.000000)">
+            <g id="hive" sketch:type="MSLayerGroup" transform="translate(1196.000000, 461.000000)">
+                <rect id="Path" stroke="#FFFFFF" fill="#FAEC45" sketch:type="MSShapeGroup" x="32.1126761" y="49.8245614" width="2.81690141" height="6.1754386"></rect>
+                <rect id="Path" stroke="#FFFFFF" fill="#FAEC45" sketch:type="MSShapeGroup" x="3.94366197" y="49.8245614" width="2.81690141" height="6.1754386"></rect>
+                <path d="M0.301037229,51.2808394 L39.6989628,51.2808394 L37.1830986,38.7171186 L2.81690141,38.7171186 L0.301037229,51.2808394 Z" id="Rectangle-14" stroke="#FFFFFF" fill="#FAEC45" sketch:type="MSShapeGroup"></path>
+                <path d="M0.301037229,39.7117538 L39.6989628,39.7117538 L37.1830986,27.148033 L2.81690141,27.148033 L0.301037229,39.7117538 Z" id="Rectangle-13" stroke="#FFFFFF" fill="#FAEC45" sketch:type="MSShapeGroup"></path>
+                <path d="M0.301037229,27.5812647 L39.6989628,27.5812647 L37.1830986,15.0175439 L2.81690141,15.0175439 L0.301037229,27.5812647 Z" id="Rectangle-15" stroke="#FFFFFF" fill="#FAEC45" sketch:type="MSShapeGroup"></path>
+                <polygon id="Triangle-7" stroke="#FFFFFF" fill="#FAEC45" sketch:type="MSShapeGroup" points="20 2.66666667 40 15.5789474 0 15.5789474 "></polygon>
+                <path d="M22.5352113,24.2804241 L22.5352113,20.9125584 C22.5352113,19.5171593 21.3973095,18.3859649 20,18.3859649 C18.5998415,18.3859649 17.4647887,19.5216655 17.4647887,20.9125584 L17.4647887,24.2804241" id="Rectangle-12" stroke-opacity="0.74000001" stroke="#FFFFFF" fill="#333333" sketch:type="MSShapeGroup"></path>
+                <ellipse id="Oval-40" fill="#333333" sketch:type="MSShapeGroup" transform="translate(4.666667, 7.666667) rotate(-52.000000) translate(-4.666667, -7.666667) " cx="4.66666667" cy="7.66666667" rx="0.666666667" ry="1"></ellipse>
+                <ellipse id="Oval-41" fill="#333333" sketch:type="MSShapeGroup" transform="translate(10.000000, 1.000000) rotate(-28.000000) translate(-10.000000, -1.000000) " cx="10" cy="1" rx="0.666666667" ry="1"></ellipse>
+                <ellipse id="Oval-42" fill="#333333" sketch:type="MSShapeGroup" transform="translate(23.333333, 14.333333) rotate(-328.000000) translate(-23.333333, -14.333333) " cx="23.3333333" cy="14.3333333" rx="0.666666667" ry="1"></ellipse>
+                <ellipse id="Oval-43" fill="#333333" sketch:type="MSShapeGroup" transform="translate(28.000000, 19.666667) rotate(-315.000000) translate(-28.000000, -19.666667) " cx="28" cy="19.6666667" rx="0.666666667" ry="1"></ellipse>
+                <ellipse id="Oval-44" fill="#333333" sketch:type="MSShapeGroup" transform="translate(24.000000, 34.333333) rotate(-24.000000) translate(-24.000000, -34.333333) " cx="24" cy="34.3333333" rx="0.666666667" ry="1"></ellipse>
+                <ellipse id="Oval-43" fill="#333333" sketch:type="MSShapeGroup" transform="translate(10.000000, 14.333333) rotate(-60.000000) translate(-10.000000, -14.333333) " cx="10" cy="14.3333333" rx="0.666666667" ry="1"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

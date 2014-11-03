@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="725px" viewBox="0 0 1440 725" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>fond</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="28.2562301%" cy="13.1681792%" fx="28.2562301%" fy="13.1681792%" r="31.3229336%" id="radialGradient-1">
+            <stop stop-color="#62C816" stop-opacity="0.940755208" offset="0%"></stop>
+            <stop stop-color="#2FB145" stop-opacity="0.513502038" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="61.4491644%" cy="15.3316887%" fx="61.4491644%" fy="15.3316887%" r="31.3229336%" id="radialGradient-2">
+            <stop stop-color="#62C816" stop-opacity="0.940755208" offset="0%"></stop>
+            <stop stop-color="#2FB145" stop-opacity="0.513502038" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="24.5980873%" y1="-46.4729649%" x2="60.7310518%" y2="29.8550058%" id="linearGradient-3">
+            <stop stop-color="#EDF70F" offset="0%"></stop>
+            <stop stop-color="#EBF538" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="69.7370679%" y1="7.51281868%" x2="66.533023%" y2="24.0336932%" id="linearGradient-4">
+            <stop stop-color="#333333" stop-opacity="0.25574615" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.00699162138" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="45.219733%" y1="7.72772437%" x2="41.8896627%" y2="29.3542878%" id="linearGradient-5">
+            <stop stop-color="#333333" stop-opacity="0.09375" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.00699162138" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="9.89322007%" y1="2.3495209%" x2="9.89321992%" y2="35.0676485%" id="linearGradient-6">
+            <stop stop-color="#333333" stop-opacity="0.120952219" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.00699162138" offset="100%"></stop>
+        </linearGradient>
+        <path id="path-7" d="M-0.229374801,167.502906 C-0.229374801,167.502906 40.5478128,19.8230283 107.574712,1.30364891 C174.601611,-17.2157304 216.84362,135.85041 292.855136,135.85041 C368.866652,135.85041 421.2606,53.3480704 562.130054,68.9183021 C702.999509,84.4885338 722.798803,168.49136 816.930175,148.203592 C911.061547,127.915823 878.632578,42.8538031 1011.35337,83.3268196 C1144.07416,123.799836 1222.42032,195.242713 1296.26288,179.757784 C1370.10543,164.272854 1445.7655,141.582666 1445.7655,141.582666 L1445.7655,517.058054 L1.77721964,517.058076 L-0.229374801,167.502906 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="fond" sketch:type="MSArtboardGroup">
+            <g id="montagnes" sketch:type="MSLayerGroup" transform="translate(50.000000, 121.000000)"></g>
+            <g id="collines" sketch:type="MSLayerGroup" transform="translate(-4.000000, 208.000000)">
+                <g id="Path-1">
+                    <use stroke-opacity="0.624122509" stroke="#FFFFFF" stroke-width="1" fill="#1FD844" sketch:type="MSShapeGroup" xlink:href="#path-7"></use>
+                    <use stroke="none" fill-opacity="0.9" fill="url(#radialGradient-1)" xlink:href="#path-7"></use>
+                    <use stroke="none" fill-opacity="0.5" fill="url(#radialGradient-2)" xlink:href="#path-7"></use>
+                    <use stroke="none" fill-opacity="0.3" fill="url(#linearGradient-3)" xlink:href="#path-7"></use>
+                    <use stroke="none" fill-opacity="0.5" fill="url(#linearGradient-4)" xlink:href="#path-7"></use>
+                    <use stroke="none" fill="url(#linearGradient-5)" xlink:href="#path-7"></use>
+                    <use stroke="none" fill-opacity="0.7" fill="url(#linearGradient-6)" xlink:href="#path-7"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

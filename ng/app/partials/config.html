@@ -1,0 +1,114 @@
+<div class="config container">
+    <h1>Relevés hebdomadaires et questions du Jeko-Quizz</h1>
+    
+    <tabset>
+        <tab heading="Relevés hebdomadaires">
+            <div class="upload">Importer un fichier de relevé hebdomadaire : <input nv-file-select uploader="uploader" type="file" /></div>
+            <ul class="list-unstyled">
+                <li ng-repeat="item in uploader.queue">
+                    {{ item.file.name }} - {{ item.file.size/1024/1024|number:2 }} Mo
+                    <div ng-show="item.isUploading || item.isUploaded" class="progress upload-progress">
+                        <div class="progress-bar" role="progressbar" ng-style="{ 'width': item.progress + '%' }"></div>
+                    </div>
+                    <span ng-show="item.isSuccess"><i class="glyphicon glyphicon-ok"></i></span>
+                    <span ng-show="item.isCancel"><i class="glyphicon glyphicon-ban-circle"></i></span>
+                    <span ng-show="item.isError"><i class="glyphicon glyphicon-remove"></i></span>
+                </li>
+            </ul>
+            
+            <div ng-show="consFile && !consImported">
+                <h2>Aperçu du fichier à <button ng-click="importCons()" class="btn btn-primary btn-lg">Importer</button></h2>
+               
+                <p>Semaine {{consFile.year}} - {{consFile.week}} : {{rawSavings.length}} logements</p>
+                <table class="table table-striped">
+                    <thead><tr>
+                        <th>Logement</th><th>Chauffage (kWh/m<sup>2</sup>)</th><th>Electricité (kWh/lgt)</th><th>Eau (l)</th><th>ECS (kWh/m<sup>2</sup>)</th>
+                    </tr></thead>
+                    <tbody>
+                        <tr ng-repeat="rawSaving in rawSavings">
+                            <td>{{rawSaving.dwellingLabel}}</td>
+                            <td>{{rawSaving.heatingConsumption | number: 2}}</td>
+                            <td>{{rawSaving.electricityConsumption | number: 2}}</td>
+                            <td>{{rawSaving.waterConsumption | number: 0}}</td>
+                            <td>{{rawSaving.hotWaterConsumption | number: 2}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>            
+            
+            <div ng-show="consImported" class="cons-imported slab">
+                <p>Le relevé de la semaine {{consFile.week}} a été importé.</p>
+                <p>Vous pouvez prévenir par courriel et/ou SMS les locataires que de nouvelles données sont disponibles en cliquant sur 
+                <button ng-click="notifyUsers()" class="btn btn-primary btn-lg">Informer les locataires</button></p>
+            </div>
+            
+            <h2 class="cons-history">Historique</h2>
+            <table class="table table-striped">
+                <thead><tr>
+                    <th>Date</th><th>Fichier</th><th>Semaine</th><th>Importé</th>
+                </tr></thead>
+                <tbody>
+                    <tr ng-repeat="consFile in consFiles">
+                        <td>{{consFile.uploadDate | date:'dd/MM/yyyy HH:mm'}}</td>
+                        <td><a ng-href="/upcons/{{consFile.localName}}">{{consFile.name}}</a></td>
+                        <td>{{consFile.year}} - {{consFile.week}}</td>
+                        <td><span ng-show="consFile.imported" class="glyphicon glyphicon-ok"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </tab>
+        <tab heading="Questions du Jeko-Quizz">
+            <div class="upload">Importer un fichier de questions : <input nv-file-select uploader="tipsUploader" type="file" /></div>
+            <ul class="list-unstyled">
+                <li ng-repeat="item in tipsUploader.queue">
+                    {{ item.file.name }} - {{ item.file.size/1024/1024|number:2 }} Mo
+                    <div ng-show="item.isUploading || item.isUploaded" class="progress upload-progress">
+                        <div class="progress-bar" role="progressbar" ng-style="{ 'width': item.progress + '%' }"></div>
+                    </div>
+                    <span ng-show="item.isSuccess"><i class="glyphicon glyphicon-ok"></i></span>
+                    <span ng-show="item.isCancel"><i class="glyphicon glyphicon-ban-circle"></i></span>
+                    <span ng-show="item.isError"><i class="glyphicon glyphicon-remove"></i></span>
+                </li>
+            </ul>
+            
+            <div ng-show="tipsFile">
+                <h2>Aperçu du fichier à <button ng-click="importTips()" class="btn btn-primary btn-lg">Importer</button></h2>
+               
+                <p>{{tips.length}} questions</p>
+                <table class="table table-striped">
+                    <thead><tr>
+                        <th>Question</th>
+                        <th>Bonne réponse</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                    </tr></thead>
+                    <tbody>
+                        <tr ng-repeat="tip in tips">
+                            <td>{{tip.question}}</td>
+                            <td>{{tip.goodAnswer}}</td>
+                            <td>{{tip.answer2}}</td>
+                            <td>{{tip.answer3}}</td>
+                            <td>{{tip.answer4}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>            
+                        
+            <h2 class="tips-history">Historique</h2>
+            <table class="table table-striped">
+                <thead><tr>
+                    <th>Date</th><th>Fichier</th><th>Importé</th>
+                </tr></thead>
+                <tbody>
+                    <tr ng-repeat="tipsFile in tipsFiles">
+                        <td>{{tipsFile.uploadDate | date:'dd/MM/yyyy HH:mm'}}</td>
+                        <td><a ng-href="/uptips/{{tipsFile.localName}}">{{tipsFile.name}}</a></td>
+                        <td><span ng-show="tipsFile.imported" class="glyphicon glyphicon-ok"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </tab>
+    </tabset>
+    <div ng-show="processing"><span us-spinner></div>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="236px" height="345px" viewBox="0 0 236 345" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>arbre</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M120.5,224 C183.736604,224 222.625,213.128906 235,109 C247.375,4.87109375 168.717073,0.20703125 105.480469,0.20703125 C42.2438649,0.20703125 -20.421875,12.703125 6,109 C32.421875,205.296875 57.2633961,224 120.5,224 Z" id="TreeShape" fill="#C5E1A5" sketch:type="MSShapeGroup"></path>
+        <path d="M142.566406,344.5 C140.967224,334.539417 141.610726,323.347694 138.386719,313.679688 C132.167855,295.030841 121.172101,284.217517 117.974609,265.068359 C113.287545,236.998439 120.273438,200.185926 120.273438,172.34375" id="Path" stroke="#979797" sketch:type="MSShapeGroup"></path>
+        <path d="M118.832031,208.089844 C118.076587,197.79836 123.150701,188.795829 127.191406,179.613281 C134.293718,163.4732 143.09254,143.603401 157.148438,131.894531 C164.921599,125.419318 194.424154,108.11263 197.816406,101.328125 C200.289376,96.3821855 202.726959,90.9445332 205.476562,86.3515625" id="Path" stroke="#979797" sketch:type="MSShapeGroup"></path>
+        <path d="" id="Path" stroke="#979797" sketch:type="MSShapeGroup"></path>
+        <path d="M120.621094,179.175781 C83.5485858,154.393927 38.9267293,131.368134 27.3125,84.8242188" id="branche-gauche" stroke="#979797" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

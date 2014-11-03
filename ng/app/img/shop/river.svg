@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="157px" height="149px" viewBox="0 0 157 149" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>river</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.185207201" offset="0%"></stop>
+            <stop stop-color="#2BBFB3" offset="100%"></stop>
+        </linearGradient>
+        <path id="path-2" d="M88.1312229,0.235346889 C88.1312229,0.235346889 36.8093252,10.6780175 36.8093226,28.2558505 C36.80932,45.8336835 109.369205,34.7842921 109.369203,51.0775972 C109.3692,67.3709024 14.314365,80.8196839 3.5235673,106.758894 C-7.26723045,132.698105 11.6623628,147.225984 11.6623628,147.225984 L152.731094,147.225989 C152.731094,147.225989 17.4158283,120.888404 42.382908,101.098251 C67.3499877,81.3080986 120.567533,74.9579028 120.567533,52.6400688 C120.567533,30.3222348 45.9580556,35.9625975 42.3829071,26.3850361 C41.0580346,18.8534854 57.4742583,11.6896786 95.5841745,0.235346889 C91.6058184,0.235346892 88.1312229,0.235346889 88.1312229,0.235346889 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="river" sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)">
+            <rect id="Rectangle-10" fill="#AFEB26" sketch:type="MSShapeGroup" x="0" y="0" width="156" height="147"></rect>
+            <g>
+                <use stroke-opacity="0.74000001" stroke="#FFFFFF" stroke-width="1" fill="#2BBFB3" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                <use stroke="none" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

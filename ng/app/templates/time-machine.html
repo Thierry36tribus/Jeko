@@ -1,0 +1,18 @@
+<div class="time-machine">
+    <div class="hidden-xs" id="help-time-machine">
+        <button type="button" class="btn btn-icon btn-trees" ng-click="play()">
+            <span class="glyphicon {{tmPlaying ? 'glyphicon-pause' : 'glyphicon-play'}}"></span>
+        </button>
+        <button type="button" class="btn btn-icon btn-trees" ng-click="previousWeek()">
+            <span class="glyphicon glyphicon-backward"></span>
+        </button>
+        <button type="button" class="btn btn-icon btn-trees" ng-click="nextWeek()">
+            <span class="glyphicon glyphicon-forward"></span>
+        </button>
+        <slider ng-model="week" floor="{{firstWeek}}" ceiling="{{lastWeek}}"></slider>
+        <div ng-if="fromDate">{{fromDate | date:'dd/MM'}} au {{toDate | date:'dd/MM'}}</div>
+    </div>
+</div>
+
+<div ng-show="loadingShapes"><span us-spinner></span></div>
+<div ng-show="loadingData"><span us-spinner></div>

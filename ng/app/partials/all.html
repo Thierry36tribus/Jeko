@@ -1,0 +1,45 @@
+<div class="all" ng-intro-options="introOptions" ng-intro-method="startHelp" ng-style="{'background': bgList, 'background-size':'100%', 'background-repeat': 'no-repeat'}">
+    <ng-include src="'templates/help-button.html'"></ng-include>
+    <div ng-if="weather" class="weather">
+        <img id="help-weather" class="weather-icon" ng-src="img/weather/{{weather.current}}.svg" alt="Météo" popover-title="La météo à {{weather.lastTimeStamp | date : 'HH'}} h : {{weather.title}}" popover-template="templates/weather.html" popover-placement="right" ng-attr-popover-trigger="{{weatherPopoverTrigger}}">
+    </div>    
+    <div class="orchard-container">
+        <canvas id="orchardCanvas" ng-mousemove="mouseMove($event)"></canvas>
+    <div>
+    <div>
+        <div id="help-orchard"></div>
+        <t36-time-machine></t36-time-machine>
+    </div>
+    <div class="savings-info slab">
+         <p ng-if="thisWeekNbFruits == undefined">Le verger de Jeko pousse, patience...</p>
+        <div ng-if="week && week != firstWeek">
+            <p ng-if="thisWeekNbFruits != undefined"><ng-pluralize count="thisWeekNbFruits" when="{0 : 'Aucun nouveau fruit', one:'1 fruit de plus', other: '{} fruits de plus'}"></ng-pluralize> dans le verger du {{fromDate | date:'dd/MM'}} au {{toDate | date:'dd/MM'}}</p>
+            <div ng-show="savingsNbPercent >= 50">
+                <p  class="savings-percent">{{savingsNbPercent | number:0}} % des locataires de la Grotte Rolland ont fait des économies {{savingsNbEnergy}}&nbsp;!</p>
+            </div>
+        </div>
+        <div ng-if="week && week == firstWeek">
+            <p ng-if="thisWeekNbFruits != undefined"><ng-pluralize count="thisWeekNbFruits" when="{0 : 'Aucun fruit', one:'1 fruit', other: '{} fruits'}"></ng-pluralize> dans le verger au début.</p>
+        </div>
+    </div>
+    <gauge class="gauge-small" data="gaugeValue" id="gaugeSmall" ng-click="openGauge()" title="Jauge collective"></gauge>
+        
+    <!-- Non visible directement, tel quel ************************************************************************* -->  
+                
+    <div ng-show="tooltip" id="tooltip" ng-click="showMine(tooltip)" class="hidden-xs orchard-tooltip">
+        <ng-pluralize count="tooltip.fruits" 
+                      when="{'0': 'Aucun fruit',
+                            'one': '1 fruit',
+                            'other': '{} fruits'}">
+        </ng-pluralize>
+        <div ng-if="tooltip.mine">
+            {{$parent.userName}}, c'est votre arbre ! 
+            <br> Cliquez pour plus de détails
+        </div>
+        <div ng-show="tooltip.hasHighestScore">
+            <br>La couronne est attribuée au locataire ayant
+            <br>obtenu le plus de bonnes réponses au Jeko-Quizz !
+        </div>
+    </div>
+</div>
+        

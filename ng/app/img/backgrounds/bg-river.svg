@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="725px" viewBox="0 0 1440 725" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>fond</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M837.341657,416.49631 C837.341657,416.49631 730.71969,438.518268 730.719684,475.587168 C730.719679,512.656067 881.463865,489.35463 881.46386,523.714661 C881.463855,558.074692 683.986092,586.436068 661.568057,641.137805 C639.150023,695.839541 678.47652,726.476565 678.47652,726.476565 L971.548802,726.476576 C971.548802,726.476576 690.429426,670.93473 742.298887,629.200394 C794.168347,587.466058 904.728549,574.074489 904.728549,527.009669 C904.72855,479.944849 749.726306,491.839491 742.298885,471.641913 C739.546443,455.759051 773.65138,440.651703 852.825269,416.49631 C844.560178,416.49631 837.341657,416.49631 837.341657,416.49631 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="fond" sketch:type="MSArtboardGroup">
+            <g id="montagnes" sketch:type="MSLayerGroup" transform="translate(50.000000, 121.000000)"></g>
+            <g id="collines" sketch:type="MSLayerGroup" transform="translate(-4.000000, 208.000000)"></g>
+            <g id="rivière">
+                <use stroke-opacity="0.74000001" stroke="#FFFFFF" stroke-width="1" fill="#2BBFB3" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <use stroke="none" fill="none" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,51 @@
+<div class="container games">
+    <div class="links">
+        <a ng-href="#/all"><img src="img/icon-orchard.png" alt="Retour au verger" width="51" height="30"> <span class="hidden-xs">Retour au verger</span></a>   
+    </div>
+    <h1 ng-show="!withoutTitle">Jeko : ma consommation en question</h1>
+    
+    <div ng-if="game && started">
+        <p>Bonnes réponses : {{goodAnswers}} / 3</p>
+        <p class="game-description">{{game.desc.description}}</p>
+        <div ng-show="!ended">
+            <ng-include src="getTemplate()"></ng-include>    
+        </div>
+    </div>
+    
+    <div ng-show="game.ended && !ended" class="row jumbotron result {{game.win ? 'result-win' : ''}}">
+        <div class="col-md-3 bee-smiley">
+            <img src="img/bee-happy.png" alt="" ng-show="game.win" width="119" height="221">
+            <img src="img/bee-sad.png" alt="" ng-show="!game.win" width="100" height="102">
+        </div> 
+        <div class="col-md-9">
+            <p ng-show="game.ended">{{game.resultInfo}}</p>
+            <p ng-show="game.win" class="game-result">{{game.winText}}</p>
+            <p ng-show="!game.win"><span class="game-result">Perdu !</span> {{game.lostText}}</p>
+        </div>
+    </div>
+    <div class="next">
+        <button ng-show="!ended && game.ended && gameIndex < games.length-1" ng-click="nextGame()" class="btn btn-lg btn-game">
+            Question suivante
+        </button>
+    <div>
+    <div ng-show="game && started && !game.ended && !ended" class="cancel">
+        <button ng-click="cancelAll()" class="btn">J'abandonne</button>
+        <button ng-click="cancelGame()" class="btn">Je passe</button>
+    </div>
+    <div ng-show="ended" class="jumbotron result {{goodAnswers == 3 ? 'result-win' : ''}}"> 
+        <div ng-show="goodAnswers == 3" class="game-result">
+            <p>Félicitations, vous avez répondu correctement à 3 questions !</p>
+            <button ng-click="goToMe()" class="btn btn-lg btn-game">Découvrir mes consommations</button>
+        </div>
+        <p ng-show="goodAnswers < 3">
+            <span class="game-result">Vous n'avez pas donné 3 bonnes réponses, tentez à nouveau votre chance !</span>
+        </p>
+    </div>
+    
+    <div ng-show="!started && !loadingData && goodAnswers < 3" class="start-game">
+        <p>Trois réponses exactes, et vous pourrez découvrir vos consommations de la semaine !</p>
+        <button ng-click="startGame()" class="btn btn-lg btn-game">{{firstTime ? "C'est parti !" : 'Je rejoue'}}</button>
+    </div>
+    <div ng-show="loadingData"><span us-spinner/></div>
+    <a id="bottomAnchor"></a>
+</div>

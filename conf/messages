@@ -1,0 +1,12 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+
+
+secure.username=Votre identifiant
+secure.password=Votre mot de passe
+secure.remember=Se souvenir de moi
+secure.signin=Connexion
+
+secure.error=Oups, utilisateur ou mot de passe inconnu.
+secure.logout=Vous avez été déconnecté.

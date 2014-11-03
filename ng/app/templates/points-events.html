@@ -1,0 +1,5 @@
+<ul class="points-list list-unstyled">
+    <li ng-repeat="event in pointsEvents">
+        {{event.eventDate | date:'dd/MM'}} - {{getOriginText(event.origin)}} : {{event.nb}} {{event.nb == 1 ? 'abeille' : 'abeilles'}}
+    </li>
+</ul>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="70px" viewBox="0 0 100 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>lune + cloud 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-5" sketch:type="MSArtboardGroup" transform="translate(-130.000000, -38.000000)" stroke="#FFFFFF">
+            <g id="lune-+-cloud-2" sketch:type="MSLayerGroup" transform="translate(120.000000, 39.000000)">
+                <path d="M29.3522293,39.1373513 C29.3522293,11.2366922 46.8610657,4.11967855 46.8610657,4.11967855 C27.5213391,4.11967855 11.843393,19.7976247 11.843393,39.1373513 C11.843393,58.4770779 27.5213391,74.155024 46.8610657,74.155024 C46.8610657,74.155024 29.3522293,67.0380104 29.3522293,39.1373513 Z" id="lune" fill="#FBF7C5" sketch:type="MSShapeGroup" transform="translate(29.598833, 39.137351) rotate(-21.000000) translate(-29.598833, -39.137351) "></path>
+                <path d="M81.7832229,31.3470001 C78.5416057,21.8878266 68.5780644,15 56.7894737,15 C44.0749343,15 33.4834053,23.0123458 31.1586604,33.6214456 C22.4320685,35.2004625 16,40.6321955 16,47.0901814 C16,54.7847054 25.1310347,61.0223496 36.3947368,61.0223496 C40.0869489,61.0223496 43.5500034,60.3521077 46.5374026,59.180013 L46.5374026,59.180013 C49.6847718,60.365904 53.1501544,61.0223496 56.7894737,61.0223496 C63.133061,61.0223496 68.9481778,59.0278761 73.4718005,55.7115167 C77.2039335,58.7690553 82.6016596,60.6902408 88.6052632,60.6902408 C99.8689653,60.6902408 109,53.9277359 109,45.5857632 C109,37.2437906 99.8689653,30.4812856 88.6052632,30.4812856 C86.2126634,30.4812856 83.9162915,30.786416 81.7832229,31.3470001 Z" id="cloud-2" stroke-opacity="0.793251812" fill="#5AD5D5" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

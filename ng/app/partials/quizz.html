@@ -1,0 +1,84 @@
+<div class="container quizz">
+    <ng-include src="'templates/points-header.html'"></ng-include>
+    <h1 ng-show="!withoutTitle">Jeko-Quizz</h1>
+    
+    <div ng-if="game && started">
+        <p>Question {{gameIndex + 1}} / {{games.length}}</p>
+        <ng-include src="getTemplate()"></ng-include>    
+    </div>
+    
+    <div ng-show="game.ended && !ended" class="row jumbotron result {{game.win ? 'result-win' : ''}}">
+        <div class="col-md-3 bee-smiley">
+            <img src="img/bee-happy.png" alt="" ng-show="game.win && game.ended && !ended" width="119" height="221" class="happy-bee">
+            <img src="img/bee-sad.png" alt="" ng-show="!game.win && game.ended && !ended" width="100" height="102" class="sad-bee">
+        </div> 
+        <div class="col-md-9">
+            <p ng-show="game.ended">{{game.resultInfo}}</p>
+            <p ng-show="game.win" class="game-result">{{game.winText}}</p>
+            <p ng-show="!game.win"><span class="game-result">Perdu !</span> {{game.lostText}}</p>
+        </div>
+    </div>
+    <div class="next">
+        <button ng-show="game.ended && gameIndex < games.length" ng-click="nextGame()" class="btn btn-lg btn-game">
+            {{gameIndex < games.length-1 ? 'Question suivante' : "Voir mon score"}}
+        </button>
+    <div>
+    <div ng-show="game && started && !game.ended" class="cancel">
+        <button ng-click="cancelAll()" class="btn">J'abandonne</button>
+        <button ng-click="cancelGame()" class="btn">Je passe</button>
+    </div>
+    <div ng-show="ended" class="jumbotron result {{goodAnswers > 0 ? 'result-win' : ''}}"> 
+        <p ng-show="goodAnswers > 0 && goodAnswers < games.length" class="game-result">
+            Vous avez répondu correctement à&nbsp;<ng-pluralize count="goodAnswers" when="{'one': '1 question', 'other': '{} questions'}"></ng-pluralize>&nbsp;sur {{games.length}}, vous avez gagné <ng-pluralize count="goodAnswers" when="{'one': '1 abeille', 'other': '{} abeilles'}"></ng-pluralize>
+        </p>
+        
+        <div ng-show="ended && goodAnswers > 0" class="bee bee1"><img src="img/bee.png" alt=""></div>
+        <div ng-show="ended && goodAnswers > 1" class="bee bee2"><img src="img/bee.png" alt=""></div>
+        <div ng-show="ended && goodAnswers > 2" class="bee bee3"><img src="img/bee.png" alt=""></div>
+        <div ng-show="ended && goodAnswers > 3" class="bee bee4"><img src="img/bee.png" alt=""></div>
+        <div ng-show="ended && goodAnswers > 4" class="bee bee5"><img src="img/bee.png" alt=""></div>
+        <div ng-show="ended && goodAnswers > 5" class="bee bee6"><img src="img/bee.png" alt=""></div>
+        
+        <p ng-show="goodAnswers == 0"><span class="game-result">Vous n'avez répondu correctement à aucune question :-((</p>
+        <ul class="list-unstyled">Pour en savoir plus :
+            <li><a href="http://www.negawatt.org/association.html" target="_blank">www.negawatt.org</a></li>
+            <li><a href="http://www.fondation-nicolas-hulot.org/engagement/agissez-au-quotidien-1" target="_blank">www.fondation-nicolas-hulot.org</a></li>
+            <li><a href="http://www.ademe.fr/particuliers-eco-citoyens" target="_blank">www.ademe.fr</a></li>
+        </ul>
+        <div ng-show="highestScore > 0">
+            <p class="game-result">Bravo ! Vous avez le meilleur score total, avec {{highestScore}} bonnes réponses !</p>
+            <p><img src="img/avatars/crown.svg"></p>
+        </div>
+    </div>
+    <div ng-show="!started && !loadingData && gameCount == 0" class="start-game">
+        <div ng-show="points < 5">
+            <p>Jouez pour gagner des abeilles et pouvoir décorer le verger !</p>
+            <br>
+        </div>
+        <div ng-show="points >= 5">
+            <p>Vous avez {{points}} abeilles, utilisez-les pour décorer le verger</p>
+            <p>ou jouez pour tenter d'en gagner plus !</p>
+            <br>
+        </div>
+           
+       <div class="frame">
+            <div class="hexagon-list sliding">
+                <div ng-repeat="decor in decorsThumbnails" class="hexagon-container">
+                    <div class="hexagon hexagon-image-only hexagon-shop hexagon-hover hexagon-inline">
+                       <p> <a href="#/shop"><img ng-src="img/shop/{{decor.image}}"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button ng-click="startGame()" class="btn btn-lg btn-game">Je joue !</button>
+        <a href="#/shop" class="btn btn-lg btn-game">Je décore</a>        
+    </div>    
+    <div ng-show="!started && !loadingData && gameCount > 0 && gameCount < 3" class="start-game">
+        <a href="#/shop" class="btn btn-lg btn-game">Je décore</a>        
+        <button ng-click="startGame()" class="btn btn-lg btn-game">Je rejoue</button>
+    </div>
+    <p ng-show="!started && !loadingData && gameCount == 3"><a href="#/all">Retour au verger</a></p>    
+    <div ng-show="loadingData"><span us-spinner/></div>
+    <a id="bottomAnchor"></a>
+</div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="101px" height="80px" viewBox="0 0 101 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>fog + cloud 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-5" sketch:type="MSArtboardGroup" transform="translate(-135.000000, -53.000000)" stroke="#FFFFFF">
+            <g id="fog-+-cloud-2" sketch:type="MSLayerGroup" transform="translate(136.000000, 54.000000)">
+                <g id="fog" transform="translate(9.000000, 57.000000)" sketch:type="MSShapeGroup">
+                    <path d="M-0.333179224,10.5720071 L70.9400532,10.5720071" id="Path-1017"></path>
+                    <path d="M19.6668208,21.1440143 L53.2261039,21.1440143 L90.9400532,21.1440143" id="Path-1018"></path>
+                    <path d="M9.66682078,0.57200714 L80.9400532,0.57200714" id="Path-1016"></path>
+                </g>
+                <path d="M65.7832229,16.3470001 C62.5416057,6.88782663 52.5780644,0 40.7894737,0 C28.0749343,0 17.4834053,8.01234583 15.1586604,18.6214456 C6.43206846,20.2004625 0,25.6321955 0,32.0901814 C0,39.7847054 9.13103471,46.0223496 20.3947368,46.0223496 C24.0869489,46.0223496 27.5500034,45.3521077 30.5374026,44.180013 L30.5374026,44.180013 C33.6847718,45.365904 37.1501544,46.0223496 40.7894737,46.0223496 C47.133061,46.0223496 52.9481778,44.0278761 57.4718005,40.7115167 C61.2039335,43.7690553 66.6016596,45.6902408 72.6052632,45.6902408 C83.8689653,45.6902408 93,38.9277359 93,30.5857632 C93,22.2437906 83.8689653,15.4812856 72.6052632,15.4812856 C70.2126634,15.4812856 67.9162915,15.786416 65.7832229,16.3470001 Z" id="cloud-2" stroke-opacity="0.793251812" fill="#5AD5D5" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

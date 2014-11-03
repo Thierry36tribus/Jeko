@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="65px" height="204px" viewBox="0 0 65 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>cypres</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-5" sketch:type="MSArtboardGroup" transform="translate(-1096.000000, -339.000000)" stroke="#FFFFFF">
+            <g id="verger-personnalisé" sketch:type="MSLayerGroup" transform="translate(31.000000, 200.000000)">
+                <g id="cypres" transform="translate(1065.627376, 139.500000)" sketch:type="MSShapeGroup">
+                    <path d="M30.7162129,169.58814 L33.7085332,201.887591 L40.0507039,201.785666 C40.0507039,201.785666 33.9613089,177.053514 37.0060065,173.320827 C40.0507041,169.58814 30.7162129,169.58814 30.7162129,169.58814 Z" id="Path-291" stroke-opacity="0.74000001" fill="#7E744C"></path>
+                    <path d="M34.5158403,175.260398 C34.5158403,175.260398 0.151067452,137.813052 0.151068069,87.1664304 C0.151068686,36.5198092 43.0566076,42.0897947 43.0566071,8.14554093 C43.0566066,-25.7987128 67.9700593,56.1021513 61.8036478,102.926535 C55.6372363,149.750918 34.5158403,175.260398 34.5158403,175.260398 Z" id="TreeShape" fill="rgba(102,138,60,0.7)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<div class="container">   
+    <a href="#/admin">Retour à la page d'administration</a>
+    <button class="description-suppr btn btn-danger pull-right" ng-click="del()" ng-show="dwelling.id && dwelling.id > 0">Supprimer le logement</button>
+    <h4 class="description-title">Logement</h4>
+
+    <form role="form">
+        <div class="form-group">
+            <label for="name">Identifiant</label>
+            <input ng-model="dwelling.label" type="text" class="form-control" id="name" placeholder="Libellé" required>
+        </div>
+        <div class="form-group">
+            <label for="user">Locataire</label>
+            <select ng-model="dwelling.user" ng-options="user as user.name for user in users" class="form-control" id="user" ></select>
+        </div>
+        <div class="form-group">
+            <label for="surface">Surface en m<sup>2</sup></label>
+            <input ng-model="dwelling.surface" type="number" class="form-control" id="surface" placeholder="Surface" required>
+        </div>
+        <div class="description-button">
+            <button class="btn btn-default" ng-click="cancel()">Annuler</button>
+            <button class="btn btn-primary" ng-click="save(user)">Enregistrer</button>
+        </div>
+    </form>
+    <p>
+        <br><br>
+        <a ng-href="#/me/{{dwelling.id}}">Voir l'arbre de ce logement</a>
+        <br>
+        <a ng-href="#/all/{{dwelling.id}}">Voir le verger</a>
+    </p>
+</div>

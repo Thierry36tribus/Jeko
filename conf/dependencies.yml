@@ -1,0 +1,19 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> crud
+    - play -> secure
+    - play -> qunit 1.0
+    - maklemenz -> minifymod 1.0.9
+    
+    
+    # autres rep
+repositories:
+     - maklemenz:
+        type: http
+        artifact:  "http://cloud.github.com/downloads/maklemenz/[module]/[module]-[revision].zip"
+        contains:
+          - maklemenz -> * 
+    
+    

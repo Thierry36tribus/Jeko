@@ -1,0 +1,72 @@
+.btn-changecolor(@color) {
+    background-color: @color;
+    border-color: @color;
+    color: #fff;
+    transition: all 0.4s;
+    
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        background-color: darken(@color,10%);
+        border-color: darken(@color,10%);
+    }
+    &.disabled:hover,
+    &.disabled:focus,
+    &.disabled:active,
+    &.disabled.active,
+    &[disabled]:hover,
+    &[disabled]:focus,
+    &[disabled]:active,
+    &[disabled].active,
+    fieldset[disabled] &:hover,
+    fieldset[disabled] &:focus,
+    fieldset[disabled] &:active,
+    fieldset[disabled] &.active {
+        background-color: @color;
+        border-color: @color;
+    }
+}
+.btn-changecolor(@color) when (lightness(darken(@color,10%)) >= 50%) {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: darken(@color,30%);
+    }
+}
+.btn-changecolor(@color) when (lightness(darken(@color,10%)) < 50%) {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: #fff;
+    }
+}
+
+.btn-trees{
+    .btn-changecolor(@light-green);
+}
+.btn-points{
+    .btn-changecolor(@default-orange);
+}
+
+.btn-simul {
+    .btn-changecolor(blue);
+}
+
+.btn-more-simul {
+    .btn-changecolor(blue);
+}
+
+.btn-game {
+    .btn-changecolor(@points-orange);
+    margin-bottom: 5px;
+}
+
+.container .btn-lg {
+    font-size: 28px;
+}
+.modal-body .btn-lg {
+    font-size: 28px;
+}

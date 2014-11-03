@@ -1,0 +1,32 @@
+<div class="container custom">
+    <ng-include src="'templates/points-header.html'"></ng-include>
+
+    <h1>Je choisis mon arbre</h1>    
+    <p class="instructions">
+        Bravo ! Grâce à votre assuidité, vous pouvez personnaliser votre arbre. Choisissez-en un parmi ceux proposés.
+        <br>
+        <span ng-show="customLevel && customLevel < 2">Et continuez à consulter vos consommations pour accéder à d'autres arbres !</span>
+    </p>
+    <div class="row">
+        <div class="col-sm-6 hexagon-list">
+            <div ng-repeat="treeSymbol in treeSymbols" ng-click="selectTree(treeSymbol.img)" class="hexagon-container">
+                <div class="hexagon hexagon-image-only hexagon-default {{treeSymbol.img == 'not-allowed.svg' ? '' : 'hexagon-hover'}}  hexagon-inline {{treeSymbol.img == custom.avatar ? 'hexagon-selected' : ''}}">
+                    <p><img ng-src="img/avatars/{{treeSymbol.img}}"></p>		
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6">
+            <div class="slab dotted">
+                <canvas id="treeCanvas" ></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="row ok-cancel-buttons">  
+        <div class="col-xs-12">     
+            <button ng-click="cancel()" ng-disabled="!modified" class="btn btn-default">Annuler</button>        
+            <button ng-click="save()" ng-disabled="!modified || !user.isTenant" class="btn btn-primary btn-lg">Ok</button>        
+        </div>  
+    </div>
+    
+</div>

@@ -1,0 +1,6 @@
+<div class="links">
+    <a ng-if="!user.dwellingId" ng-href="#/all"><img src="img/icon-orchard.png" alt="Retour au verger" width="51" height="30"> <span class="hidden-xs">Retour au verger</span></a>   
+    <a ng-if="user.dwellingId" ng-href="#/me/{{user.dwellingId}}/{{magicNumber}}"><img src="img/icon-tree.png" alt="Retour à mon arbre" width="15" height="30"> <span class="hidden-xs">Retour à mon arbre</span></a>      
+    <a class="pull-right" href="#/account"><span class="hidden-xs">Bonjour {{$parent.userName}} ! </span><img ng-src="img/{{$parent.avatar}}" alt="" width="20" height="40"></a>
+</div>
+<t36-points ng-if="!withoutPoints" class="header-hexagon" />

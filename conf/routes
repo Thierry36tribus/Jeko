@@ -1,0 +1,69 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+*      /               module:secure
+*  	   /admin          module:crud
+
+GET		/					Application.app
+GET		/administration		Application.administration
+GET		/configuration		Application.configuration
+
+GET     /app/               staticDir:ng/app
+
+GET		/test/{dwellingLabel}	Public.test
+GET		/test					Public.test
+
+GET		/uiUser			Application.uiUser
+
+GET		/forget				Public.forget
+POST	/sendNewPassword	Public.sendNewPassword
+
+GET 	/jeko/{userName}/{magicNumber} Public.fromMail
+
+GET		/me	Application.me
+
+GET		/uiDwelling/{dwellingId}	Application.uiDwelling
+GET		/uiDwellings/{dwellingId}	Application.uiDwellingsMineFirst
+
+GET		/checkAdmin				Application.checkAdmin
+POST	/pwd					Application.setPassword
+
+GET		/users					UserData.users
+GET		/users/{userId}			UserData.user
+PUT		/users/{userId}			UserData.saveUser
+POST	/users					UserData.createUser
+DELETE	/users/{userId}			UserData.deleteUser
+POST	/sendNewUser/{userId}	UserData.sendNewUser
+
+GET		/userEvents/{userId}		UserData.events
+GET		/userVisits/{userId}		UserData.visits
+GET		/userPoints/{userId}		UserData.pointsEvents
+
+GET		/dwellings					DwellingData.dwellings
+GET		/dwellings/{dwellingId}		DwellingData.dwelling
+PUT		/dwellings/{dwellingId}		DwellingData.saveDwelling
+POST	/dwellings					DwellingData.createDwelling
+DELETE	/dwellings/{dwellingId}		DwellingData.deleteDwelling
+
+POST	/uploadSavings					Upload.uploadSavings
+POST	/importSavings/{consFileId}		Upload.importSavings
+
+POST	/uploadTips					Upload.uploadTips
+POST	/importTips/{tipsFileId}	Upload.importTips
+
+GET		/uiPointsEvents				Points.uiPointsEvents
+
+GET		/weather					Application.weather
+GET		/actions/{dwellingId}		Application.simulatorActions
+POST	/removeAction/{actionId}	Application.removeSimulatorAction
+
+GET     /favicon.ico							staticFile:public/images/favicon/favicon.ico
+
+GET     /public/                                staticDir:public
+
+GET     /upcons/                                staticDir:data/cons
+GET     /uptips/                                staticDir:data/tips
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}

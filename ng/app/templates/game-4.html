@@ -1,0 +1,12 @@
+<div class="game4">
+    
+    <div class="questions">
+        <p class="question-text">{{question.text}}</p>
+
+        <div  class="answers details-charts">
+            <button ng-repeat="answer in question.answers"  ng-click="selectAnswer(answer)" ng-disabled="question.answered && !answer.selected" class="btn btn-answer btn-game {{question.answered && answer.good ? 'btn-good-answer' : ''}}">
+                <amchart id="chart{{$index}}" data="answer.data" class="detail-chart"></amchart>
+            </button>
+        </div>
+    </div>    
+</div>

@@ -1,0 +1,10 @@
+<div class="game2">
+    
+    <div class="questions">
+        <p class="question-text">{{question.text}}</p>
+
+        <div  class="answers">
+            <button ng-repeat="answer in question.answers" ng-click="selectAnswer(answer)" ng-disabled="question.answered && !answer.selected" class="btn btn-answer btn-game {{question.answered && answer.good ? 'btn-good-answer' : ''}}">{{answer.text}}</button>
+        </div>
+    </div>    
+</div>

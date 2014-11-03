@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="725px" viewBox="0 0 1440 725" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop HD 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="64.9639753%" cy="5.36603536%" fx="64.9639753%" fy="5.36603536%" r="12.2058104%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.151636096" offset="0%"></stop>
+            <stop stop-color="#247D66" stop-opacity="0.513502038" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="9.75583705%" cy="-2.68401539%" fx="9.75583705%" fy="-2.68401539%" r="24.3371535%" id="radialGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.151636096" offset="0%"></stop>
+            <stop stop-color="#247D66" stop-opacity="0.513502038" offset="100%"></stop>
+        </radialGradient>
+        <path id="path-3" d="M193.360296,93.6523838 C193.360296,93.6523838 236.207257,13.0912644 279.356927,13.0912644 C322.506596,13.0912644 359.719058,83.4713322 392.542251,83.4713322 C425.365445,83.4713322 423.081375,43.6293487 460.761658,52.4515747 C498.441942,61.2738006 489.780361,102.079131 529.283773,92.7752314 C568.787185,83.4713322 584.431692,21.9185606 639.132429,31.3187944 C693.833165,40.7190282 836.952197,147.83809 836.952197,147.83809 L836.952197,518.54059 L193.360296,518.5406 L193.360296,93.6523838 Z"></path>
+        <radialGradient cx="28.2562301%" cy="13.1681792%" fx="28.2562301%" fy="13.1681792%" r="31.3229336%" id="radialGradient-4">
+            <stop stop-color="#62C816" stop-opacity="0.940755208" offset="0%"></stop>
+            <stop stop-color="#2FB145" stop-opacity="0.513502038" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="61.4491644%" cy="15.3316887%" fx="61.4491644%" fy="15.3316887%" r="31.3229336%" id="radialGradient-5">
+            <stop stop-color="#62C816" stop-opacity="0.940755208" offset="0%"></stop>
+            <stop stop-color="#2FB145" stop-opacity="0.513502038" offset="100%"></stop>
+        </radialGradient>
+        <path id="path-6" d="M-0.227803654,168.502906 C-0.227803654,168.502906 48.4153744,20.8230283 115.221997,2.30364891 C182.02862,-16.2157304 224.131805,136.85041 299.893518,136.85041 C375.655231,136.85041 427.876992,54.3480704 568.283495,69.9183021 C708.689998,85.4885338 728.424224,169.49136 822.246244,149.203592 C916.068264,128.915823 883.745869,43.8538031 1016.03049,84.3268196 C1148.31511,124.799836 1226.40379,196.242713 1300.00367,180.757784 C1373.60355,165.272854 1452.01501,140.479544 1452.01501,140.479544 L1452.11064,519.058076 L-0.227803654,519.058076 L-0.227803654,168.502906 Z"></path>
+        <linearGradient x1="50%" y1="0%" x2="48.2982848%" y2="39.6562463%" id="linearGradient-7">
+            <stop stop-color="#B3CF0A" offset="0%"></stop>
+            <stop stop-color="#72C32A" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <path id="path-8" d="M6.003715,446.995614 C6.003715,446.995614 281.9904,374.654752 451.011032,379.197021 C620.031663,383.739289 723.923663,421.518506 867.73668,421.518506 C1011.5497,421.518505 1301.72123,378.926814 1375.69381,378.926814 C1449.6664,378.926814 1467.44975,383.739289 1467.44975,383.739289 L1466.01932,731.295012 L0.016038014,731.830767 L6.003715,446.995614 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-5" sketch:type="MSArtboardGroup">
+            <g id="fond" sketch:type="MSLayerGroup" transform="translate(-24.000000, -5.000000)">
+                <rect id="Rectangle-1" fill="#2BBFB3" sketch:type="MSShapeGroup" x="20" y="0" width="1447" height="1034"></rect>
+                <g id="fond++" transform="translate(15.000000, 133.000000)">
+                    <g id="collines" transform="translate(0.000000, 59.000000)">
+                        <g id="Path-2" opacity="0.712220149">
+                            <use stroke-opacity="0.456182065" stroke="#FFFFFF" stroke-width="1" fill="#4BBD43" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>
+                            <use stroke="none" fill-opacity="0.5" fill="url(#radialGradient-1)" xlink:href="#path-3"></use>
+                            <use stroke="none" fill-opacity="0.5" fill="url(#radialGradient-2)" xlink:href="#path-3"></use>
+                        </g>
+                        <g id="Path-1">
+                            <use stroke-opacity="0.624122509" stroke="#FFFFFF" stroke-width="1" fill="#1FD844" sketch:type="MSShapeGroup" xlink:href="#path-6"></use>
+                            <use stroke="none" fill-opacity="0.9" fill="url(#radialGradient-4)" xlink:href="#path-6"></use>
+                            <use stroke="none" fill-opacity="0.5" fill="url(#radialGradient-5)" xlink:href="#path-6"></use>
+                        </g>
+                    </g>
+                </g>
+                <g id="Path-681">
+                    <use stroke-opacity="0.832937047" stroke="#FFFFFF" stroke-width="1" fill="#7ED321" sketch:type="MSShapeGroup" xlink:href="#path-8"></use>
+                    <use stroke="none" fill-opacity="0.5" fill="url(#linearGradient-7)" xlink:href="#path-8"></use>
+                </g>
+            </g>
+        </g>
+        <g id="icones-meteo" sketch:type="MSArtboardGroup" transform="translate(66.000000, 0.000000)"></g>
+    </g>
+</svg>

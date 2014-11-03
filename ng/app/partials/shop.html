@@ -1,0 +1,52 @@
+<div class="container shop">
+    <ng-include src="'templates/points-header.html'"></ng-include>
+
+    <h1>Je décore le verger</h1>
+        
+    <div>
+        <p class="instructions">
+            Décorez le verger grâce aux abeilles que vous avez gagnées : ajoutez les personnages et les décors de votre choix.<br>
+            Pas assez d’abeilles ? Retournez jouer au Jeko-Quizz.
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8 hexagon-list">
+            <div ng-repeat="element in elements" ng-click="addElement(element)" class="hexagon-container">
+                <div class="hexagon hexagon-shop hexagon-hover hexagon-inline {{element.selected ? 'hexagon-selected' : ''}}">
+                    <p class="price">{{element.price}} <br><img ng-src="img/shop/{{element.image}}"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="slab dotted">
+                <p>Vous avez {{points}} <img src="img/bee.png" class="bee-img"></p>
+                <p ng-show="cart.elements.length > 0">A ajouter dans le verger :</p>
+                <p ng-show="cart.elements.length == 0">Sélectionnez ce que vous voulez ajouter</p>
+                <ul class="list-unstyled">
+                    <li ng-repeat="element in cart.elements" class="cart-element">
+                        <img ng-src="img/shop/{{element.image}}"> {{element.price}}
+                        <button class="btn btn-icon btn-points" ng-click="removeElement(element)">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                    </li>
+                    <li ng-show="cart.total > 0" class="cart-total">Total : cela utilisera {{cart.total}} <img src="img/bee.png" class="bee-img"></li>
+                </ul>
+                <div>     
+                    <div ng-show="cart.elements.length > 0 && !canBuy">
+                        <p class="cant-buy">
+                            Il vous manque {{cart.total - points}} abeilles
+                        </p>
+                        <p><a class="btn btn-game" href="#/quizz">Jouez</a> pour en gagner !</p>
+                    </div>
+                    <button ng-click="cancel()" ng-show="cart.elements.length > 0" class="btn btn-default">Annuler</button>        
+                    <button ng-click="buy()" ng-show="canBuy && user.isTenant" class="btn btn-primary btn-lg">Ok</button>        
+                </div>  
+
+            </div>
+        </div>
+    </div>
+    <div ng-show="loadingData"><span us-spinner></div>
+
+</div>

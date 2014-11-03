@@ -1,0 +1,6 @@
+<ul class="list-unstyled">
+    <li>{{weather.temperature | number:1}} °C</li>
+    <li ng-if="weather.windSpeed > 0">{{weather.windSpeed | number:1}} km/h, {{weather.windDirection}}</li>
+</ul>
+
+ 

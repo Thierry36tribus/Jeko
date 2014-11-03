@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="101px" viewBox="0 0 22 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>tower1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="fond" sketch:type="MSArtboardGroup" transform="translate(-1309.000000, -167.000000)" stroke-opacity="0.74000001" stroke="#FFFFFF">
+            <g id="tower1" sketch:type="MSLayerGroup" transform="translate(1310.000000, 168.000000)">
+                <path d="M3.62264734,66.2208789 L3.62264734,51.6019228 L15.5583617,51.6019228 L14.0732724,66.2208789 L3.62264734,66.2208789 Z" id="Path-1318" fill="#DD5C5C" sketch:type="MSShapeGroup"></path>
+                <path d="M1.82746534,99.3453231 L-0.0817385501,61.1226606 L5.43452465,61.0743964 L5.43452446,66.7568646 L11.3675574,66.7568646 L11.3675575,61.1226606 L18.7714786,61.1226606 L13.0122985,99.3453231 L1.82746534,99.3453231 Z" id="Path-1317" fill="#DD5C5C" sketch:type="MSShapeGroup"></path>
+                <path d="M9.70932455,32.8447965 L9.63795303,-0.00772788425 C9.63795303,-0.00772788425 17.8294563,2.67843639 19.3098746,1.33535425 C20.790293,-0.00772788425 17.3157977,3.69277688 15.8948558,3.69277701 C14.4739139,3.69277713 19.4764086,6.64928794 20.8378739,6.64928793 C22.1993391,6.64928792 9.63795303,6.64928792 9.63795303,6.64928792" id="Path-1321" fill="#13EBFA" sketch:type="MSShapeGroup"></path>
+                <path d="M1.49393799,51.7975196 C5.97940065,45.095399 9.42035918,29.8975388 9.42035963,26.9813679 C9.42036008,24.0651971 12.6879995,44.8935473 17.3467813,51.7975196 C12.6879995,51.7975196 7.91948702,51.7975193 1.49393799,51.7975196 Z" id="Path-1319" fill="#B8E986" sketch:type="MSShapeGroup"></path>
+                <path d="M5.55528559,99.1433563 C5.55528559,99.1433563 0.947971276,79.7132568 8,79.7132568 C15.0520287,79.7132568 9.37506593,99.143356 9.37506593,99.143356" id="Path-1320" fill="#ED9A9A" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="725px" viewBox="0 0 1440 725" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>fond</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="64.9639753%" cy="5.36603536%" fx="64.9639753%" fy="5.36603536%" r="12.2058104%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.151636096" offset="0%"></stop>
+            <stop stop-color="#247D66" stop-opacity="0.513502038" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="9.75583705%" cy="-2.68401539%" fx="9.75583705%" fy="-2.68401539%" r="24.3371535%" id="radialGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.151636096" offset="0%"></stop>
+            <stop stop-color="#247D66" stop-opacity="0.513502038" offset="100%"></stop>
+        </radialGradient>
+        <path id="path-3" d="M185.360296,92.6523838 C185.360296,92.6523838 228.207257,12.0912644 271.356927,12.0912644 C314.506596,12.0912644 351.719058,82.4713322 384.542251,82.4713322 C417.365445,82.4713322 415.081375,42.6293487 452.761658,51.4515747 C490.441942,60.2738006 481.780361,101.079131 521.283773,91.7752314 C560.787185,82.4713322 576.431692,20.9185606 631.132429,30.3187944 C685.833165,39.7190282 828.952197,146.83809 828.952197,146.83809 L828.952197,517.54059 L185.360296,517.5406 L185.360296,92.6523838 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="fond" sketch:type="MSArtboardGroup">
+            <g id="montagnes" sketch:type="MSLayerGroup" transform="translate(50.000000, 121.000000)"></g>
+            <g id="collines" sketch:type="MSLayerGroup" transform="translate(-4.000000, 208.000000)">
+                <g id="Path-2">
+                    <use stroke-opacity="0.456182065" stroke="#FFFFFF" stroke-width="1" fill="#45D06A" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>
+                    <use stroke="none" fill-opacity="0.2" fill="url(#radialGradient-1)" xlink:href="#path-3"></use>
+                    <use stroke="none" fill-opacity="0.2" fill="url(#radialGradient-2)" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

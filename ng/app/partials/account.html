@@ -1,0 +1,70 @@
+<div class="user-part container">
+
+    <div class="links">
+        <a ng-if="!user.dwellingId" ng-href="#/all"><img src="img/icon-orchard.png" alt="Retour au verger" width="51" height="30"> <span class="hidden-xs">Retour au verger</span></a>   
+        <a ng-if="user.dwellingId" ng-href="#/me/{{user.dwellingId}}/{{magicNumber}}"><img src="img/icon-tree.png" alt="Retour à mon arbre" width="15" height="30"> <span class="hidden-xs">Retour à mon arbre</span></a>  
+    </div>
+      
+    <h1 ng-show="user.accepted">{{user.name}} - {{user.login}}</h1>
+    <div ng-show="!user.accepted" class="text-center">
+        <h1 ng-show="!user.accepted">Bienvenue {{user.name}} !</h1>
+        <p>{{user.login}}</p>
+        <p class="text-first-time slab">Dites nous comment vous voulez être informé puis cliquez sur Ok pour découvrir le verger et suivre votre consommation.</p>
+    </div>
+    <div class="info-container dotted slab ">
+        <h2 ng-if="user.dwellingLabel && user.isTenant">
+           Logement {{user.dwellingLabel}}
+        </h2>
+        <h2 ng-if="!user.isTenant">
+           {{user.roleLabel}}
+        </h2>
+        <form>
+            <label for="name">Nom ou prénom, ou pseudo, c'est vous qui (le) voyez ;-) </label>
+            <input id="name" type="text" class="form-control" ng-model="user.name" ng-disabled="editingPassword" ng-change="modified()" />
+            <div class="notifications">
+                <p>J'accepte de recevoir des informations sur ma consommation :</p>
+                <div class="row">
+                    <div class="checkbox col-md-12">
+                        <label>
+                            <input type="checkbox" ng-model="user.byEmail" ng-disabled="editingPassword" ng-change="modified()">par courriel
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="checkbox col-md-3">
+                        <label>
+                            <input type="checkbox" ng-model="user.bySms" ng-disabled="editingPassword" ng-change="modified()">par SMS au
+                        </label>
+                    </div>
+                     <div class=" col-md-6">
+                        <label class="sr-only" for="phone">N° de portable</label>
+                        <input type="tel" ng-model="user.phone" class="form-control phone-number" id="phone" placeholder="N° de portable 0612345678" ng-focus="user.bySms = true">
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-default" ng-click="cancel()" ng-disabled="editingPassword || !userModified">Annuler</button>
+            <button type="button" class="btn btn-primary" ng-click="save()" ng-disabled="editingPassword || !userModified">Ok</button>
+        </form>
+        
+        <div class="custom-link"><a href="#/custom">Choisir mon arbre</a></div>
+        
+        <div class="edit-password">
+            <a ng-click="editPassword()" href="">Modifier mon mot de passe Jeko</a>
+            <form ng-show="editingPassword" role="form">
+                <div class="form-group">
+                    <label for="pwd1">Mot de passe : </label><input id="pwd1" type="password" class="form-control" ng-model="pwd1"/>
+                </div>
+                <div class="form-group">
+                    <label for="pwd2">Une deuxième fois : </label><input id="pwd2" type="password" class="form-control" ng-model="pwd2"/>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-default" ng-click="cancelPassword()">Annuler</button>
+                    <button type="button" class="btn btn-primary" ng-click="savePassword()">Ok</button>
+                </div>
+            </form>
+        </div>
+
+        <p><a href="/logout">Me déconnecter</a></p>
+    </div>
+    
+</div>

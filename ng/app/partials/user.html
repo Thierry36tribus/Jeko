@@ -1,0 +1,60 @@
+<div class="user-description user container">   
+    <a href="#/admin">Retour à la page d'administration</a>
+    <button class="description-suppr btn btn-danger pull-right" ng-click="del()" ng-show="user.id && user.id > 0">Supprimer l'utilisateur</button>
+    <h4 class="description-title">Utilisateur</h4>
+
+    <form role="form">
+        <div class="form-group">
+            <label for="name">Nom</label>
+            <input ng-model="user.name" type="text" class="form-control" id="name" placeholder="Nom" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input ng-model="user.login" type="email" class="form-control" id="email" placeholder="Adresse email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">N° de portable</label>
+            <input ng-model="user.phone" type="tel" class="form-control" id="phone" placeholder="N° de portable 0612345678" >
+        </div>
+        <div class="form-group">
+            <label for="userRole">Rôle</label>
+            <select ng-model="user.role" ng-options="role.value as role.label for role in roles" class="form-control" id="userRole"></select>
+        </div>
+        <span ng-show="user.lastError != undefined" class="user-error">{{user.lastError}}</span>
+        <div class="description-button">
+            <button class="btn btn-default" ng-click="cancel()">Annuler</button>
+            <button class="btn btn-primary" ng-click="save(user)">Enregistrer</button>
+        </div>
+    </form>
+    <div ng-if="user.id && user.id > 0" class="sendMail">
+        <button class="btn btn-info" ng-click="sendNewUser(user)">Envoyer le mail de création du compte</button>
+    </div>
+    
+
+    <tabset class="tabset">
+        <tab heading="Visites">
+            <h4 class="user-events">Historique des {{visitCount}} visites</h4>
+            <p ng-if="visits.length == 0">Aucune visite</p>
+            <ul class="list_unstyled">
+                <li ng-repeat="visit in visits">
+                    {{visit.vDate | date:'dd/MM/yyyy HH:mm:ss'}} - {{visit.ww}}x{{visit.wh}} - {{getDeviceInfo(visit.userAgent)}}
+                </li>
+            </ul>
+        </tab>    
+        <tab heading="Abeilles">
+            <h4 class="user-events">Historique des {{points}} abeilles</h4>
+            <ng-include src="'templates/points-events.html'"></ng-include>   
+        </tab>    
+        <tab heading="Connexions">
+            <h4 class="user-events">Historique des connexions et déconnexions</h4>
+            <p ng-if="events.length == 0">Aucune connexion</p>
+            <ul class="list_unstyled">
+                <li ng-repeat="event in events">
+                    {{event.eventDate | date:'dd/MM/yyyy HH:mm:ss'}} {{getEventTypeAsString(event)}}
+                </li>
+            </ul>
+        </tab>
+
+    </tabset>    
+    
+</div>

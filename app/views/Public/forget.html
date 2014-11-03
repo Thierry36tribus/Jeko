@@ -1,0 +1,22 @@
+#{extends 'main.html' /}
+#{set title:'Jeko' /}
+
+#{set 'moreStyles'}
+    <link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    #{stylesheet 'forget.css'/}
+#{/set} 
+#{set 'moreScripts'}
+#{/set}
+
+<!--<div class="container">-->
+    <h1>Jeko</h1>
+    #{form action:@Public.sendNewPassword(), enctype:'multipart/form-data', role:'form'}
+        <label for="email" class="control-label">Entrez votre adresse email pour recevoir un nouveau mot de passe : </label>
+        <input type="email" id="email" name="email" class="form-control input-lg" required>
+        <div class="buttons">
+            <a href="/" class="btn btn-default btn-lg" >Annuler</a>
+            <button class="btn btn-custom btn-lg" type="submit">Ok</button>
+        </div>
+    #{/form}
+<!--</div>-->
